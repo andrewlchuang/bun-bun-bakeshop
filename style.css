@@ -1,3 +1,4 @@
+/*navigation bar*/
 ul{
     list-style-type: none;
     margin: 0;
@@ -10,7 +11,53 @@ li {
 }
 
 li a {
+    color: black;
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 15px;
+    text-decoration: none;
   }
+
+li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+.navbar{
+    border: 0;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/*styling seasonal item cover photo*/
+.cvr{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*styling seasonal item block*/
+.sznl{
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    left: 30px;
+    top: 300px;
+    text-align: center;
+    width: 350px;
+    padding: 25px;
+}
+
+/* grid layout for featured products */
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+.prod{
+    align-items: center;
+    text-align: center;
+}
+
+.rll{
+    max-width: 33%;
+}
