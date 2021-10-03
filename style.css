@@ -61,10 +61,24 @@ li a:hover {
 .prod{
     align-items: center;
     text-align: center;
-    margin-bottom: 4.5%;
+    margin-bottom: 5.5%;
 }
 
 /* images in grid */
 .rll{
-    max-width: 33%;
+    max-width: 40%;
+    position:relative;
+}
+
+.limited-ed{
+    max-width:100px;
+    position: absolute;
+}
+
+/*add to cart icon*/
+.add2cart{
+    width: 40%;
+    height: 46px;
+    background: #E5CB88;
+    border: 0px;
 }
