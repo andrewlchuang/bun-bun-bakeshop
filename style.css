@@ -16,7 +16,7 @@ li {
 }
 
 li a {
-    color: white;
+    color: black;
     display: block;
     text-align: center;
     padding: 10px 15px;
@@ -31,7 +31,7 @@ li a:hover {
 .navbar{
     width: 100%;
     border: 0;
-    background-color:rgb(156, 124, 62);
+    background-color:#fce8b6;
     right: 0; 
     top: 0;
     position: fixed;
@@ -85,13 +85,10 @@ li a:hover {
     position:relative;
 }
 
-.rll:hover {
-    transform: scale(1.1);
-  }
-
-.limited-ed{
+  .limited-ed{
     max-width:100px;
     position: absolute;
+    z-index: 0.5;
 }
 
 /*add to cart icon*/
@@ -109,6 +106,7 @@ li a:hover {
 }
 
 /* carousel prototype */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -135,4 +133,22 @@ li a:hover {
 
 .dot-list{
     text-align: center;
+    margin-bottom: 3%;
+}
+
+/* footer */
+.wrapper2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+.copyright, .address {
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    border: 0;
+    background-color:#fce8b6;
 }
