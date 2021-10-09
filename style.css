@@ -2,6 +2,13 @@
 body {
     background: #fff2e0;
     margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+button {
+    font-family: 'DM Sans', sans-serif;
+    background: #E5CB88;
+    border: 0px;
 }
 
 ul{
@@ -38,6 +45,12 @@ li a:hover {
     z-index: 1;
 }
 
+svg{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+
 /*styling seasonal item cover photo*/
 .cvr{
     width: 100%;
@@ -51,7 +64,7 @@ li a:hover {
 /*styling seasonal item block*/
 .caption{
     position: absolute;
-    background-color: rgba(255,255,255,0.5);
+    background-color: #f5e0ae;
     left: 30px;
     text-align: center;
     width: 360px;
@@ -60,6 +73,11 @@ li a:hover {
 
 #sznl{
     top: 250px;
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
 }
 
 /* grid layout for featured products */
@@ -91,16 +109,26 @@ li a:hover {
     z-index: 0.5;
 }
 
-/*add to cart icon*/
+/*add to cart and buy now icon*/
 .add2cart{
     margin-top: 0px;
     width: 40%;
     height: 46px;
-    background: #E5CB88;
-    border: 0px;
 }
 
 .add2cart:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.buy{
+    height: 30px;
+    background-color: white;
+    width: 30%;
+    font-weight: bold;
+}
+
+.buy:hover{
     text-decoration: underline;
     transform: scale(1.1);
 }
@@ -155,5 +183,59 @@ footer {
 
 /* details page grid */
 .lft{
-    margin-left: 30px;
+    margin-left: 50px;
+}
+
+.rght{
+    align-items: center;
+    text-align: center;
+}
+
+.prod-img{
+    width: 35%;
+    margin-top: 20%;
+}
+
+.sbmt{
+    align-items: center;
+    text-align: center;
+}
+
+.product-name{
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25em;
+}
+
+.product-desc, .allergens, label, .progress{
+    font-size: 1.15em;
+}
+
+select{
+    background-color: #f5e0ae;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+    width: 30%;
+    height: 1.15em;
+    margin: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.add{
+    margin-top: 50px;
+    height: 46px;
+    border-radius: 10px;
+    width: 25%;
+    font-size: 1.15em;
+}
+
+.add:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.price{
+    margin-top: 0px;
 }
