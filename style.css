@@ -122,6 +122,11 @@ h2{
     transform: scale(1.1);
 }
 
+.add2cart a {
+    text-decoration: none;
+    color: black;
+}
+
 .buy{
     height: 30px;
     background-color: white;
