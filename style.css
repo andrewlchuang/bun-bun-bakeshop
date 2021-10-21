@@ -104,10 +104,15 @@ h2{
     position:relative;
 }
 
-  .limited-ed{
+.limited-ed, #flvr{
     max-width:100px;
     position: absolute;
     z-index: 1;
+}
+
+#flvr{
+    right: 13.5%;
+    top: 100px;
 }
 
 /*add to cart and buy now icon*/
@@ -202,7 +207,7 @@ footer {
     margin-top: 20%;
 }
 
-.sbmt{
+.sbmt, .conf-sel{
     align-items: center;
     text-align: center;
 }
