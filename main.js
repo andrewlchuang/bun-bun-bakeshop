@@ -4,7 +4,7 @@ const totalPrice = document.getElementById("total-price");
 const quant = document.getElementById("sel-quant");
 const glaze = document.getElementById("sel-glaze");
 const items = [];
-const cart = [];
+let cart = [];
 
 // Original Roll Item
 function Original(glaze, quant) {
@@ -59,5 +59,6 @@ function itemCount(){
     }
     else{
         totalItems.innerHTML = storedValue.length;
+        cart = storedValue;
     }
 }

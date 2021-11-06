@@ -342,6 +342,10 @@ select{
     text-decoration: underline;
 }
 
+.hidden-index{
+    display: none;
+}
+
 /*
 CITATIONS
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout

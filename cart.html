@@ -15,46 +15,19 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@600&family=Playfair+Display&display=swap" rel="stylesheet">
         <!--javascript-->
-        <script defer src="main.js"></script>
+        <script defer src="cart-js.js"></script>
     </head>
-    <body style = "margin: 0px 30px;">
+    <body style = "margin: 0px 30px;" onload="onLoad()">
         <!--goes back to previous page-->
         <p style="margin-top: 35px;" class = "progress" ><a href="products.html" id="progshop">← Back to Products Page</a></p>
         <h2>SHOPPING CART</h2>
-        <p>Ready to check out? We’re here to help you out!</p>
+        <p id="checking">Ready to check out? We’re here to help you out!</p>
         <!--selected item: original roll-->
-        <div class="itm-wrapper">
-            <div class = "itm-img">
-                <img src="img/roll1.jpg" class="itm-rll" alt = "photo of original cinnamon roll">
-            </div>
-            <div class = "contnt">
-                <p class = "itm-name">Original</p>
-                <p class = "itm-glaze">Glaze: No Glaze</p>
-                <p class = "itm-quantity">Quantity: 3 rolls</p>
-            </div>
-            <div class = "prc">
-                <p class = "itm-price">$23.67</p>
-            </div>
-            <button class="btn-remove-item">x</button>
+        <div id = "lst">
         </div>
-        <!--selected item: blackberry roll-->
-        <div class="itm-wrapper">
-            <div class = "itm-img">
-                <img src="img/roll1.jpg" class="itm-rll" alt = "photo of blackberry cinnamon roll">
-            </div>
-            <div class = "contnt">
-                <p class = "itm-name">Blackberry</p>
-                <p class = "itm-glaze">Glaze: Double-chocolate</p>
-                <p class = "itm-quantity">Quantity: 1 roll</p>
-            </div>
-            <div class = "prc">
-                <p class = "itm-price">$3.99</p>
-            </div>
-            <button class="btn-remove-item">x</button>
-        </div> 
         <div class="price-wrapper">
             <div></div>
-            <div id="ttl-price"><b>Total:</b> $27.66</div> 
+            <div id="ttl-price"><b>Total:</b> $<span id="total-price"></span></div> 
         </div> 
         <!--continue with purchase-->
         <div id="sbmtbut">
