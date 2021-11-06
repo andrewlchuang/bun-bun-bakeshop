@@ -4,21 +4,27 @@ const totalPrice = document.getElementById("total-price");
 const quant = document.getElementById("sel-quant");
 const glaze = document.getElementById("sel-glaze");
 const items = [];
+const cart = [];
 
-// add to cart function
-function addToCart(itemNumber){
-    items.push(itemNumber);
-    let total = 0;
-    for (item of items) {
-        total += item;
-    }
-    totalItems.innerHTML = total;
+// Original Roll Item
+function Original(glaze, quant) {
+    this.glaze = glaze;
+    this.quant = quant;
+    this.type = "Original";
+  }
+
+function addToCart(){
+    const storedValue = JSON.parse(sessionStorage.getItem("savedCart"));
+    totalItems.innerHTML = storedValue.length;
 }
-
+  
 // what happens when the user presses add2cart!
 const sbmtOrig = document.getElementById("sbmt-orig");
 sbmtOrig.onclick = function () {
-    addToCart(1);
+    var prod = new Original(glaze.textContent, quant.textContent)
+    cart.push(prod)
+    sessionStorage.setItem("savedCart", JSON.stringify(cart));
+    addToCart();
 }
 
 // changing the confirmation phrase
@@ -44,4 +50,14 @@ function changeGlaze(glz) {
 function glazeConf(glz){
     glaze.innerHTML = glz;
     changeGlaze(glz);
+}
+
+function itemCount(){
+    const storedValue = JSON.parse(sessionStorage.getItem("savedCart"));
+    if (storedValue == null){
+        totalItems.innerHTML = 0;
+    }
+    else{
+        totalItems.innerHTML = storedValue.length;
+    }
 }
