@@ -19,13 +19,12 @@ function addToCart(){
 }
   
 // what happens when the user presses add2cart!
-const sbmtOrig = document.getElementById("sbmt-orig");
-sbmtOrig.onclick = function () {
-    var prod = new Original(glaze.textContent, quant.textContent)
-    cart.push(prod)
-    sessionStorage.setItem("savedCart", JSON.stringify(cart));
-    addToCart();
-}
+function addItem() {
+        var prod = new Original(glaze.textContent, quant.textContent)
+        cart.push(prod)
+        sessionStorage.setItem("savedCart", JSON.stringify(cart));
+        addToCart();
+    }
 
 // changing the confirmation phrase
 function quantDet(qt){
